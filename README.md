@@ -61,6 +61,11 @@ Kubernetes allows you to specify resource requests and limits for each container
 
 ### 6. Testing Scenarios
 
-**Autoscaling Testing:** Simulate high traffic using tools like Apache Bench or Siege to generate requests. Monitor how the Horizontal Pod Autoscaler (HPA) reacts by scaling up the number of Flask pods.
+**Autoscaling Testing:** Monitor how the Horizontal Pod Autoscaler (HPA) reacts by scaling up the number of Flask pods.
 
 **Database Interaction Testing:** Perform CRUD operations via Flask endpoints to ensure that data is correctly inserted and retrieved from MongoDB. Restart MongoDB pods and verify data persistence using the PV and PVC setup.
+
+### 7. Benefits of using a virtual environment for python applications:
+1. Better dependency management
+2. Can use different versions of same dependency across several projects
+3. Reproducibility: By using a requirements.txt file or a similar package list, we can easily recreate the environment on another machine.
